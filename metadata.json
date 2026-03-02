@@ -1,0 +1,9 @@
+{
+    "id": "AstrasExampleMod",
+    "name": "Astra's Example Mod",
+    "author": ["theAstra"],
+    "description": "An example mod meant to teach people how to develop mods!",
+    "prefix": "xmpl",
+    "main_file": "main.lua",
+    "version": "0.0.1"
+}
