@@ -26,7 +26,7 @@ return {
                     {
                         '{C:red}+#1#{} Discards when held'
                     }, {
-                        'Gives {C:money}equal to number',
+                        'Gives {C:money}money{} equal to number',
                         'of {C:red}discards{} remaining at',
                         'end of round'
                     }
