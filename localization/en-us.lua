@@ -31,6 +31,20 @@ return {
                         'end of round'
                     }
                 }
+            },
+            j_xmpl_joker4 = {
+                name = 'Joker4',
+                text = {
+                    'All shop boosters',
+                    'are {C:money}free'
+                }
+            },
+            j_xmpl_joker5 = {
+                name = 'Joker5',
+                text = {
+                    'All shop items',
+                    'cost {C:money}half{} as much'
+                }
             }
         }
     }
