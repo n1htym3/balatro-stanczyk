@@ -46,6 +46,53 @@ return {
                     'cost {C:money}half{} as much'
                 }
             }
+        },
+        Tarot = {
+            c_xmpl_consumable1 = {
+                name = 'Consumable1',
+                text = {
+                    'Gives {C:money}$#1#'
+                }
+            }
+        },
+        xmpl_newtype = {
+            c_xmpl_consumable2 ={
+                name = 'Consumable2',
+                text = {
+                    'Gives {C:money}$#1#{} for',
+                    'each played {C:blue}Hand',
+                    '{C:inactive}(Currently: {C:money}$#2#{C:inactive})'
+                }
+            }
+        },
+        Other = {
+            undiscovered_xmpl_newtype = {
+                name = 'Undiscovered NewType',
+                text = {
+                    "Purchase or use",
+                    "this card in an",
+                    "unseeded run to",
+                    "learn what it does",
+                }
+            },
+            p_xmpl_booster1 = {
+                name = 'Standard NewPack',
+                text = {
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2#{C:xmpl_newtype} NewType{} cards to",
+                    "be used immediately",
+                }
+            }
+        }
+    },
+    misc = {
+        dictionary = {
+            b_xmpl_newtype_cards = 'Example NewType',
+            k_xmpl_newtype = 'Example NewType',
+            k_xmpl_newpack = 'NewType Pack'
+        },
+        labels = {
+            xmpl_newtype = 'NewType'
         }
     }
 }
