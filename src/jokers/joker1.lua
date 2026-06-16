@@ -49,6 +49,7 @@ SMODS.Joker {
         end
     end,
 
+
     -- Store the variables to be used in display
     loc_vars = function(self, info_queue, card)
         local remaining =
@@ -70,6 +71,7 @@ SMODS.Joker {
         card:set_edition("e_negative", true)
         G.jokers.config.card_limit = G.jokers.config.card_limit + card.ability.extra.added_slots
     end,
+
 
     -- Effect when joker is removed from the deck
     remove_from_deck = function(self, card, from_debuff)

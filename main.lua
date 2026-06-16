@@ -26,4 +26,21 @@ for _, file in ipairs(boosters_src) do
     assert(SMODS.load_file("src/boosters/" .. file))()
 end
 
+
+-- SMODS.Integration = SMODS.Integration or {}
+-- SMODS.Integration.JokerDisplay = function()
+--     SMODS.load_file("src/joker_display_definitions.lua")()
+-- end
+
+print("[DEBUG] waiting for JokerDisplay")
+
+if JokerDisplay then
+    print("[DEBUG] JokerDisplay found, loading definitions")
+
+    SMODS.load_file("src/joker_display_definitions.lua")()
+else
+    print("[DEBUG] JokerDisplay NOT available at load time")
+end
+
+
 --#endregion
