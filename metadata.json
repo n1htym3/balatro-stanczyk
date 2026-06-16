@@ -1,9 +1,9 @@
 {
-    "id": "AstrasExampleMod",
-    "name": "Astra's Example Mod",
-    "author": ["theAstra"],
-    "description": "An example mod meant to teach people how to develop mods!",
-    "prefix": "xmpl",
+    "id": "n1thym3-stanczyk-mod",
+    "name": "Stanczyk Mod",
+    "author": ["n1thym3"],
+    "description": "A mod based on the famous polish jester Stanczyk.",
+    "prefix": "stanczyk",
     "main_file": "main.lua",
     "version": "0.0.1"
 }

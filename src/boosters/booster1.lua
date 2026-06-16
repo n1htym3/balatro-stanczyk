@@ -4,11 +4,11 @@ SMODS.Booster {
         choose = 1,
         extra = 4
     },
-    group_key = 'k_xmpl_newpack',
+    group_key = 'k_stanczyk_newpack',
     weight = 1,
     kind = 'NewPack',
     create_card = function(self, card, i)
-        return {set = 'xmpl_newtype', area = G.consumeables, skip_materialize = true, soulable = true, key_append = 'newpackgen', }
+        return {set = 'stanczyk_newtype', area = G.consumeables, skip_materialize = true, soulable = true, key_append = 'newpackgen', }
     end,
     loc_vars = function(self, info_queue, card)
         return { vars = { math.min(card.ability.choose + (G.GAME.modifiers.booster_choice_mod or 0), math.max(1, card.ability.extra + (G.GAME.modifiers.booster_size_mod or 0))), math.max(1, card.ability.extra + (G.GAME.modifiers.booster_size_mod or 0)) } }

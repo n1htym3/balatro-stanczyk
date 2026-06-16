@@ -1,5 +1,5 @@
 SMODS.Joker {
-    key = 'joker5',
+    key = '5',
     atlas = 'placeholders',
     pos = {
         x = 1,
@@ -12,7 +12,7 @@ SMODS.Joker {
 local csc = Card.set_cost
 Card.set_cost = function(self)
     csc(self)
-    if next(SMODS.find_card('j_xmpl_joker5')) then
+    if next(SMODS.find_card('j_stanczyk_5')) then
         self.cost = self.cost / 2
     end
 end

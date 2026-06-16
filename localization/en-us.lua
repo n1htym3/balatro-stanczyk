@@ -1,13 +1,29 @@
 return {
     descriptions = {
         Joker = {
-            j_xmpl_joker1 = {
-                name = 'Joker1',
+            j_stanczyk_1 = {
+            --[[
+                This legendary joker, "Mammon", with the effects of:
+                • Joker slots +1 
+                • +1 slots per 15 jokers sold (X remaining)
+                • (max +5 slots)
+
+                -> Based on the symbol of Greed from mythology, appearance from Helluva Boss  
+
+            ]]
+                name = 'Mammon',
                 text = {
-                    '{C:chips}+#1#{} chips'
+                    {
+                        'Gain {C:attention}1{} Joker slot',
+                        'per {C:attention}15{} {C:inactive}#2#{}Jokers {C:attention}sold{}',
+                        '{C:inactive}(Currenty {C:attention}+#1#{C:inactive} slots){}'
+                    },
+                    {
+                        '{C:inactive}Max +5 slots'
+                    }
                 }
             },
-            j_xmpl_joker2 = {
+            j_stanczyk_2 = {
                 name = 'Joker2',
                 text = {
                     {
@@ -20,7 +36,7 @@ return {
                     }
                 }
             },
-            j_xmpl_joker3 = {
+            j_stanczyk_3 = {
                 name = 'Joker3',
                 text = {
                     {
@@ -32,14 +48,14 @@ return {
                     }
                 }
             },
-            j_xmpl_joker4 = {
+            j_stanczyk_4 = {
                 name = 'Joker4',
                 text = {
                     'All shop boosters',
                     'are {C:money}free'
                 }
             },
-            j_xmpl_joker5 = {
+            j_stanczyk_5 = {
                 name = 'Joker5',
                 text = {
                     'All shop items',
@@ -48,15 +64,15 @@ return {
             }
         },
         Tarot = {
-            c_xmpl_consumable1 = {
+            c_stanczyk_consumable1 = {
                 name = 'Consumable1',
                 text = {
                     'Gives {C:money}$#1#'
                 }
             }
         },
-        xmpl_newtype = {
-            c_xmpl_consumable2 ={
+        stanczyk_newtype = {
+            c_stanczyk_consumable2 ={
                 name = 'Consumable2',
                 text = {
                     'Gives {C:money}$#1#{} for',
@@ -66,7 +82,7 @@ return {
             }
         },
         Other = {
-            undiscovered_xmpl_newtype = {
+            undiscovered_stanczyk_newtype = {
                 name = 'Undiscovered NewType',
                 text = {
                     "Purchase or use",
@@ -75,11 +91,11 @@ return {
                     "learn what it does",
                 }
             },
-            p_xmpl_booster1 = {
+            p_stanczyk_booster1 = {
                 name = 'Standard NewPack',
                 text = {
                     "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:xmpl_newtype} NewType{} cards to",
+                    "{C:attention}#2#{C:stanczyk_newtype} NewType{} cards to",
                     "be used immediately",
                 }
             }
@@ -87,12 +103,12 @@ return {
     },
     misc = {
         dictionary = {
-            b_xmpl_newtype_cards = 'Example NewType',
-            k_xmpl_newtype = 'Example NewType',
-            k_xmpl_newpack = 'NewType Pack'
+            b_stanczyk_newtype_cards = 'Example NewType',
+            k_stanczyk_newtype = 'Example NewType',
+            k_stanczyk_newpack = 'NewType Pack'
         },
         labels = {
-            xmpl_newtype = 'NewType'
+            stanczyk_newtype = 'NewType'
         }
     }
 }

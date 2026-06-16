@@ -1,8 +1,8 @@
 SMODS.ConsumableType {
-    key = 'xmpl_newtype',
+    key = 'stanczyk_newtype',
     primary_colour = HEX('7732a8'),
     secondary_colour = HEX('1ef7f0'),
-    default = 'c_xmpl_consumable2',
+    default = 'c_stanczyk_consumable2',
     shop_rate = 0,
 }
 
@@ -18,7 +18,7 @@ SMODS.Consumable {
             dollars = 5
         }
     },
-    set = 'xmpl_newtype',
+    set = 'stanczyk_newtype',
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
