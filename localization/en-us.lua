@@ -24,15 +24,11 @@ return {
                 }
             },
             j_stanczyk_2 = {
-                name = 'Joker2',
+                name = 'Orion',
                 text = {
                     {
-                        'Gives {C:money}$#1#{} for each',
-                        'scoring {C:clubs}Clubs{} card'
-                    },{
-                        'Money scales by {C:attention}#2#',
-                        'every trigger',
-                        '{C:inactive}(Resets at end of round)'
+                        'Every {C:planet}Planet{} becomes',
+                        'a {C:spectral}Black Hole{} costing {C:money}$0{}'
                     }
                 }
             },
@@ -63,52 +59,52 @@ return {
                 }
             }
         },
-        Tarot = {
-            c_stanczyk_consumable1 = {
-                name = 'Consumable1',
-                text = {
-                    'Gives {C:money}$#1#'
-                }
-            }
-        },
-        stanczyk_newtype = {
-            c_stanczyk_consumable2 ={
-                name = 'Consumable2',
-                text = {
-                    'Gives {C:money}$#1#{} for',
-                    'each played {C:blue}Hand',
-                    '{C:inactive}(Currently: {C:money}$#2#{C:inactive})'
-                }
-            }
-        },
-        Other = {
-            undiscovered_stanczyk_newtype = {
-                name = 'Undiscovered NewType',
-                text = {
-                    "Purchase or use",
-                    "this card in an",
-                    "unseeded run to",
-                    "learn what it does",
-                }
-            },
-            p_stanczyk_booster1 = {
-                name = 'Standard NewPack',
-                text = {
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:stanczyk_newtype} NewType{} cards to",
-                    "be used immediately",
-                }
-            }
-        }
+        -- Tarot = {
+        --     c_stanczyk_consumable1 = {
+        --         name = 'Consumable1',
+        --         text = {
+        --             'Gives {C:money}$#1#'
+        --         }
+        --     }
+        -- },
+        -- stanczyk_newtype = {
+        --     c_stanczyk_consumable2 ={
+        --         name = 'Consumable2',
+        --         text = {
+        --             'Gives {C:money}$#1#{} for',
+        --             'each played {C:blue}Hand',
+        --             '{C:inactive}(Currently: {C:money}$#2#{C:inactive})'
+        --         }
+        --     }
+        -- },
+        -- Other = {
+        --     undiscovered_stanczyk_newtype = {
+        --         name = 'Undiscovered NewType',
+        --         text = {
+        --             "Purchase or use",
+        --             "this card in an",
+        --             "unseeded run to",
+        --             "learn what it does",
+        --         }
+        --     },
+        --     p_stanczyk_booster1 = {
+        --         name = 'Standard NewPack',
+        --         text = {
+        --             "Choose {C:attention}#1#{} of up to",
+        --             "{C:attention}#2#{C:stanczyk_newtype} NewType{} cards to",
+        --             "be used immediately",
+        --         }
+        --     }
+        -- }
     },
-    misc = {
-        dictionary = {
-            b_stanczyk_newtype_cards = 'Example NewType',
-            k_stanczyk_newtype = 'Example NewType',
-            k_stanczyk_newpack = 'NewType Pack'
-        },
-        labels = {
-            stanczyk_newtype = 'NewType'
-        }
-    }
+    -- misc = {
+    --     dictionary = {
+    --         b_stanczyk_newtype_cards = 'Example NewType',
+    --         k_stanczyk_newtype = 'Example NewType',
+    --         k_stanczyk_newpack = 'NewType Pack'
+    --     },
+    --     labels = {
+    --         stanczyk_newtype = 'NewType'
+    --     }
+    -- }
 }

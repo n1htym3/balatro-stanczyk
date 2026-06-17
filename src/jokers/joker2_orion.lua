@@ -1,3 +1,11 @@
+--[[
+    This legendary joker, "Orion", with the effects of:
+    • Every planet card becomes a black hole with a cost of $0
+    
+
+    -> Based on the painting of Stańczyk, which shows the Orion constellation as a symbol of ego leading to demise.
+]]
+
 SMODS.Joker {
     key = '2',
     atlas = 'placeholders',
@@ -5,40 +13,28 @@ SMODS.Joker {
         x = 1,
         y = 0
     },
+    rarity = 4,
+    cost = 20,
+
     config = {
         extra = {
-            dollars = 1,
-            reset = 1,
-            scalar = 1
         }
     },
-    rarity = 2,
-    cost = 6,
-    loc_vars = function(self, info_queue, card)
-        return {
-            vars = {
-                card.ability.extra.dollars,
-                card.ability.extra.scalar
-            }
-        }
-    end,
+
     calculate = function(self, card, context)
-        
-        if context.individual and context.cardarea == G.play and context.other_card:is_suit('Clubs') then
-            SMODS.calculate_effect({dollars = card.ability.extra.dollars}, context.other_card)
-            SMODS.scale_card(card, {
-                ref_table = card.ability.extra,
-                ref_value = 'dollars',
-                scalar_value = 'scalar',
-                message_colour = G.C.ATTENTION
-            })
+
+        if context.modify_shop_card and context.card and context.card.config.center.key == 'c_black_hole' then
+            context.card.cost = 0
+            context.card.sell_cost = 0
         end
 
-        if context.end_of_round and not context.blueprint and not context.repetition and not context.individual then
-            card.ability.extra.dollars = card.ability.extra.reset
+        if context.create_shop_card and context.set == 'Planet' then
             return {
-                message = localize('k_reset')
+                shop_create_flags = { 
+                    key = 'c_black_hole' 
+                }
             }
         end
     end
+
 }

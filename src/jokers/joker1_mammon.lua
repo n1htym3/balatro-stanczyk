@@ -10,6 +10,9 @@
 --[[
     !Known Bugs:
     - Adding a large amount of copies of this joker will cause issues, getting to 0/-30 jokers.
+        -> This seems to be caused by an issue where if multiple copies are triggered, only the
+           first one actually upgrades, the added slots from the others aren't updates. But then
+           on removal the correct number of slots are removed.
 ]]
 
 SMODS.Joker {

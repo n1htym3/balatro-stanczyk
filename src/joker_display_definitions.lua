@@ -1,4 +1,4 @@
-if JokerDisplay then
+-- if JokerDisplay then
 
 
 -- JokerDisplay.Definitions["j_stanczyk_1"] = {
@@ -24,4 +24,4 @@ if JokerDisplay then
 -- }
 
 
-end
+-- end
