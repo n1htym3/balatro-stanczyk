@@ -33,14 +33,15 @@ return {
                 }
             },
             j_stanczyk_3 = {
-                name = 'Joker3',
+                name = 'Hoarder',
                 text = {
                     {
-                        '{C:red}+#1#{} Discards when held'
-                    }, {
-                        'Gives {C:money}money{} equal to number',
-                        'of {C:red}discards{} remaining at',
-                        'end of round'
+                        'All shop items cost {C:money}$0{}',
+                        '{C:attention}Rerolls{} cost {C:money}$2{} more',
+                    },
+                    {
+                        '{E:2,C:red}Self destructs{} if any',
+                        '{C:attention}Joker{} or {C:planet}Consumable{} is sold'
                     }
                 }
             },

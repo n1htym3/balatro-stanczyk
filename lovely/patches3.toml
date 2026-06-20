@@ -1,0 +1,15 @@
+[manifest]
+version = "1.0.0"
+priority = 0
+
+# Make all purchasable items free when Hoarder (j_stanczyk_3) is held
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "if self.ability.rental then self.cost = 1 end"
+position = "after"
+payload = '''
+if #find_joker('j_stanczyk_3') > 0 then self.cost = 0 end
+'''
+match_indent = true
+
