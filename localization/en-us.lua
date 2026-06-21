@@ -57,10 +57,13 @@ return {
                 }
             },
             j_stanczyk_5 = {
-                name = 'Joker5',
+                name = 'Merchant Queen',
                 text = {
-                    'All shop items',
-                    'cost {C:money}half{} as much'
+                    {
+                        'Each {C:attention}Rare{} sold gives',
+                        '{X:red,C:white}X0.75{} Mult',
+                        '{C:inactive}(Currently {X:red,C:white}X#1#{C:inactive})'
+                    }
                 }
             }
         },
