@@ -46,10 +46,14 @@ return {
                 }
             },
             j_stanczyk_4 = {
-                name = 'Joker4',
+                name = 'Compromising Crown',
                 text = {
-                    'All shop boosters',
-                    'are {C:money}free'
+                    {
+                        'Using a {C:planet}Planet{} card',
+                        'gives {C:money}$3{} and turns the',
+                        '{C:attention}lowest{} ranked card',
+                        'in deck to {C:attention}Stone{}'
+                    }
                 }
             },
             j_stanczyk_5 = {
